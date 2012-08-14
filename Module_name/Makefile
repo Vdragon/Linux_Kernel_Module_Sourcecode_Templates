@@ -1,6 +1,6 @@
 ##################################################################
 # Linux作業系統核心外部模組用 Makefile
-# Makefile for Linux Operating System Kernel Externel Modules
+# Makefile for Linux Operating System Kernel External Modules
 ##################################################################
 # 官方網站 | Official Site
 # 　https://github.com/Vdragon/Linux_Kernel_Module_Sourcecode_Templates
