@@ -1,2 +1,7 @@
- 
+# obj-m
+# 　要連結(link)為核心模組(kernel module)的 object檔案
 obj-m += Source_code/${module_name}.o
+
+# obj-y
+# 　要連結(link)為 vmlinux 的 object檔案
+# obj-y += 
