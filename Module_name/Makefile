@@ -32,20 +32,21 @@ option_make_changeToKernelDirectory := "--directory ${kernel_header_directory}"
 # 顯示使用說明
 .PHONY: default
 default:
-	@echo "命令列格式 | Command-line format"
-	@echo "　make 「目標 | Target」"
-	@echo "目標列表 | Target list"
-	@echo "　buildModule"
-	@echo "　　建構作業系統核心模組"
-	@echo "　　Build the operating system kernel module"
-	@echo "　cleanBuiltProducts"
-	@echo "　　移除以前建構好的產物"
-	@echo "　loadModule"
-	@echo "　　載入作業系統核心模組"
-	@echo "　　Load the operating system kernel module"
-	@echo "　unloadModule"
-	@echo "　　卸載作業系統核心模組"
-	@echo "　　Unload the operating system kernel module"
+	@echo "\
+	命令列格式 | Command-line format\n\
+	　make 「目標 | Target」\n\
+	目標列表 | Target list\n\
+	　buildModule\n\
+	　　建構作業系統核心模組\n\
+	　　Build the operating system kernel module\n\
+	　cleanBuiltProducts\n\
+	　　移除以前建構好的產物\n\
+	　loadModule\n\
+	　　載入作業系統核心模組\n\
+	　　Load the operating system kernel module\n\
+	　unloadModule\n\
+	　　卸載作業系統核心模組\n\
+	　　Unload the operating system kernel module"
 	
 # 建構核心模組
 .PHONY: buildModule
