@@ -9,12 +9,13 @@
 # 使用的授權條款 | License Applied
 # 　本軟體使用 Lesser General Public License(LGPL) 版本3 or later授權條款授權您使用本軟體，如有額外的使用權利需求請來信洽談
 ##################################################################
+# 作業系統核心模組名稱
+module_name := ""
+
 # 如果Linux作業系統核心版本不支援Kbuild檔案的話就把Kbuild的內容引用到Makefile中
 ifneq (${KERNELRELEASE}, )
 include Kbuild
 else
-# 作業系統核心模組名稱
-module_name := ""
 # 作業系統核心模組原始程式碼目錄
 module_sourcecode_directory := "${PWD}"
 # 建構作業系統核心模組所對應的核心版本
