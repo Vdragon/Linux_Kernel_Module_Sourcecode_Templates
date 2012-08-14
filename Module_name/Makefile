@@ -27,6 +27,7 @@ kernel_version ?= "$(shell uname -r)"
 # （若未指定則為/lib/modules/「作業系統核心版本」/build）
 kernel_header_directory := ""
 kernel_header_directory ?= "/lib/modules/${kernel_version}/build"
+
 option_make_changeToKernelDirectory := "--directory ${kernel_header_directory}"
 
 # 顯示使用說明
